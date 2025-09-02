@@ -13,13 +13,6 @@ jobs:
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v16
         id: verify-changed-files
-        with:
-          files: |
-             *.txt
-             test_directory
-             action.yml
-             **/*.{jpeg,py}
-             !*.sql
 
       - name: List all changed files tracked and untracked files
         run: |
